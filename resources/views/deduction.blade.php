@@ -1,6 +1,6 @@
 @php $active = 'deduction' @endphp
 @extends('layouts.main')
-@section('title','test')
+@section('title','deduction')
 @section('content')
     
 <div class="row"> 
