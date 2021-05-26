@@ -38,8 +38,6 @@ class CreateEmployeesTable extends Migration
    
 
 
-
-
             $table->foreign('department_id')->references('id')->on('department');
             $table->foreign('SSS')->references('id')->on('deductions');
             $table->foreign('PhilHealth')->references('id')->on('deductions');

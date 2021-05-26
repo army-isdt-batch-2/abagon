@@ -24,7 +24,7 @@ class CreateDeductionsTable extends Migration
                    
             ]);
             $table->integer('basic_range')->index() ;
-            $table->integer('employeer_share')->index() ;
+            $table->integer('employer_share')->index() ;
             $table->integer('employee_share')->index() ;
             $table->integer('montly_contribution')->index() ;
 

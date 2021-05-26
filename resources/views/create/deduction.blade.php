@@ -22,8 +22,9 @@
                  
 
                   <div class="col-12">
-                      <form class="row g-3">
-                        <div class="col-md-4">
+                        <form action="/create_department" method="post">
+                          @csrf
+                          <div class="col-md-4">
                           <label for="inputState" class="form-label">Contribution Type</label>
                           <select id="inputState" class="form-select">
                           <option selected>Choose....</option>
@@ -32,22 +33,22 @@
                           <option>Pheal Health</option>
                           <option>Pag Ibig</option>
                           </select>
-                        </div>
+                          </div>
                           <div class="col-md-8">
                             <label for="inputEmail4" class="form-label">Base Range</label>
-                            <input type="email" class="form-control" id="inputEmail4">
+                            <input type="text" class="form-control" name="basic_range" required>
                           </div>
                           <div class="col-md-4">
                             <label for="inputEmail4" class="form-label">Monthly Contribution</label>
-                            <input type="email" class="form-control" id="inputEmail4">
+                            <input type="text" class="form-control" name="montly_contribution" required>
                           </div>
                             <div class="col-md-4">
                               <label for="inputEmail4" class="form-label">Employee Share</label>
-                              <input type="email" class="form-control" id="inputEmail4">
+                              <input type="text" class="form-control" name="employee_share" required>
                           </div>
                           <div class="col-md-4">
                             <label for="inputEmail4" class="form-label">Employer Share</label>
-                            <input type="email" class="form-control" id="inputEmail4">
+                            <input type="text" class="form-control" name="employer_share" required>
                           </div>
                           <div class="col-12">
                             <button type="submit" class="btn btn-primary">Save</button>

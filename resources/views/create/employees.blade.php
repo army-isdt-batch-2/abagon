@@ -21,31 +21,33 @@
 
 
                     <div class="col-12">
-                        <form class="row g-3">
+                            <form action="/create_department" method="post">
+                              @csrf
+
                               <div class="col-md-12">
                                 <label for="inputEmail4" class="form-label">Photo</label>
-                               <input type="file" class="form-control" id="inputEmail4">
+                                <input type="text" class="form-control" name="photo" required>
                               </div>
                               <div class="col-md-4">
                                 <label for="inputPassword4" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="inputPassword4">
+                                <input type="text" class="form-control" name="full_name" required>
                               </div>
                               <div class="col-4">
                                 <label for="inputAddress" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="">
+                                <input type="text" class="form-control" name="last_name" required>
                               </div>
                               <div class="col-4">
                                 <label for="inputAddress2" class="form-label">Middle Name</label>
-                                <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                                <input type="text" class="form-control" name="middle_initial" required>
                               </div>
                               <div class="col-4">
                                 <label for="inputAddress2" class="form-label">Contact</label>
-                               <input type="tel" class="form-control" id="inputAddress2" placeholder="">
+                                <input type="text" class="form-control" name="contact" required>
                               </div>
                               <div class="col-md-8">
                                 <div class="col-md-12">
                                   <label for="inputEmail4" class="form-label">Address</label>
-                                  <textarea rows="6" class="form-control"></textarea>
+                                  <input type="text" class="form-control" name="address" required>
                                 </div>
                               </div>
                               <div class="col-md-4">
@@ -66,15 +68,15 @@
                               </div>
                               <div class="col-4">
                                 <label for="inputAddress2" class="form-label">Birthday</label>
-                                <input type="date" class="form-control" id="inputAddress2" placeholder="">
+                                <input type="text" class="form-control" name="birthday" required>
                               </div>
                               <div class="col-4">
                                 <label for="inputAddress2" class="form-label">Designation</label>
-                                <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                                <input type="text" class="form-control" name="designation" required>
                               </div>
                               <div class="col-4">
                                 <label for="inputAddress2" class="form-label">Basic Rate</label>
-                                <input type="number" class="form-control" id="inputAddress2" placeholder="">
+                                <input type="text" class="form-control" name="rate" required>
                               </div>
                               <div class="col-md-6">
                               <label for="inputState" class="form-label">Phil Health Contribution Table</label>
@@ -111,11 +113,11 @@
                                   Check me out
                                 </label>
                               </div>
-                            </div>
-                            <div class="col-12">
+                              </div>
+                              <div class="col-12">
                               <button type="submit" class="btn btn-primary">Sign in</button>
-                            </div>
-                          </form>
+                              </div>
+                            </form>
                     </div>
                 </div>
             </div>
