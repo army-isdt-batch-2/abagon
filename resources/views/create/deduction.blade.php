@@ -22,10 +22,10 @@
                  
 
                   <div class="col-12">
-                        <form action="/create_department" method="post">
+                        <form action="/create_deduction" method="post">
                           @csrf
                           <div class="col-md-4">
-                          <label for="inputState" class="form-label">Contribution Type</label>
+                          <label class="form-label">Contribution Type</label>
                           <select id="inputState" class="form-select">
                           <option selected>Choose....</option>
                           <option>Tax</option>

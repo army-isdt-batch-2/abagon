@@ -106,7 +106,7 @@ Route::get('/create_timekeeping', [
     App\Http\Controllers\loginController::class,
     'create_timekeeping'
 
-]);->name('create_timekeeping');
+])->name('create_timekeeping');
 
 Route::get('Tkview', [
     App\Http\Controllers\TKController::class,
@@ -119,3 +119,12 @@ Route::get('payslipview', [
     'payslipview'
 
 ])->name('payslipview');
+
+Route::post('department/create/save', [
+    App\Http\Controllers\DPController::class,
+    'save'
+
+])->name('department.create.save');
+
+
+

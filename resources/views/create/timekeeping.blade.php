@@ -21,10 +21,11 @@
 
 
                   <div class="col-12">
-                      <form class="row g-3">
+                        <form action="/create_timekeeping" method="post">
+                             @csrf
                           <div class="col-md-6">
                             <label for="inputEmail4" class="form-label">Attendance Date</label>
-                            <input type="date" class="form-control" id="inputEmail4">
+                            <input type="text" class="form-control" name="date" required>
                           </div>
                           
                           <div class="col-12">

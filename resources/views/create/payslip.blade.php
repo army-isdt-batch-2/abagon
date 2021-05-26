@@ -21,14 +21,19 @@
 
 
                   <div class="col-12">
-                      <form class="row g-3">
+                        <form action="/create_payslip" method="post">
+                          @csrf
                           <div class="col-md-6">
                             <label for="inputEmail4" class="form-label">Process Payroll</label>
-                            <input type="date" class="form-control" id="inputEmail4">
+                            <input type="text" class="form-control" name="employee_id" required>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">clock_start</label>
+                            <input type="text" class="form-control" name="clock_start" required>
                           </div>
                           <div class="col-md-6">
                             <label for="inputEmail4" class="form-label">Cut-off End</label>
-                            <input type="date" class="form-control" id="inputEmail4">
+                            <input type="text" class="form-control" name="clock_end" required>
                           </div>
 
                           <div class="col-12">

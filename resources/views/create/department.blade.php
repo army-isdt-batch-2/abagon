@@ -19,7 +19,6 @@
                         <hr>    
                     </div>
 
-                   
 
                     <div class="col-12">
                         <form action="/create_department" method="post">

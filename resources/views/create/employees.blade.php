@@ -21,7 +21,7 @@
 
 
                     <div class="col-12">
-                            <form action="/create_department" method="post">
+                            <form action="/create_employees" method="post">
                               @csrf
 
                               <div class="col-md-12">
@@ -51,8 +51,8 @@
                                 </div>
                               </div>
                               <div class="col-md-4">
-                                <label for="inputState" class="form-label">Department</label>
-                                <select id="inputState" class="form-select">
+                                <label class="form-label">Department</label>
+                                <select class="form-control" name="department_name">
                                 <option selected>Choose....</option>
                                 <option>Depart 1</option>
                                 <option>Depart 2</option>
@@ -60,8 +60,8 @@
                                 </select>
                               </div>
                               <div class="col-md-4">
-                                <label for="inputState" class="form-label">Gender</label>
-                                <select id="inputState" class="form-select">
+                                <label class="form-label">Gender</label>
+                                <select id="form-control" name="gender">
                                 <option selected>Male</option>
                                 <option>Female</option>
                                 </select>
